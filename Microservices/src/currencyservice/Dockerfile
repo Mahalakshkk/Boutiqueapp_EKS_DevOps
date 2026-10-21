@@ -1,7 +1,7 @@
 # Copyright 2020 Google LLC
 # Licensed under the Apache License, Version 2.0
 
-FROM node:20.18.1-bullseye-slim AS builder
+FROM node:20.18.1-bookworm-slim AS builder
 
 # Install build tools required for native modules (pprof)
 RUN apt-get update && apt-get install -y \
@@ -20,7 +20,7 @@ RUN npm install --omit=dev --no-optional
 COPY . .
 
 # ---- Runtime image ----
-FROM node:20.18.1-bullseye-slim
+FROM node:20.18.1-bookworm-slim
 
 WORKDIR /usr/src/app
 

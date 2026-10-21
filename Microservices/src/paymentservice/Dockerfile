@@ -1,5 +1,5 @@
 # ---------- Builder ----------
-FROM node:20-slim AS builder
+FROM node:20-bookworm-slim AS builder
 
 # install build dependencies
 RUN apt-get update && apt-get install -y \
@@ -17,7 +17,7 @@ RUN npm install --omit=dev
 COPY . .
 
 # ---------- Runtime ----------
-FROM node:20-slim
+FROM node:20-bookworm-slim
 
 WORKDIR /usr/src/app
 
