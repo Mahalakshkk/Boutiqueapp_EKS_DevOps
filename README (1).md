@@ -4,7 +4,8 @@ A hands-on DevOps project that deploys a containerized **e-commerce microservice
 
 > The application code is based on Google's open-source **Online Boutique** microservices demo (Apache 2.0). The DevOps work in this repo (infrastructure as code, build/push scripting, Kubernetes deployment, monitoring and troubleshooting) was done by me.
 
-For every command I ran, the problems I hit and how I fixed them, read [PROJECT_HANDBOOK.md](PROJECT_HANDBOOK.md).
+For every command I ran, the problems I hit and how I fixed them, read [PROJECT_HANDBOOK.md] in the guven link 
+[https://drive.google.com/file/d/1H13RIZG3DPqxeK-XiHGsNOIOswkqTUn-/view?usp=sharing]
 
 ---
 
